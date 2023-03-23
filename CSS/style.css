@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  /* box-sizing: border-box; */
 }
 
 :root {
@@ -31,6 +32,7 @@ body {
 }
 
 .card {
+  cursor: pointer;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
@@ -71,6 +73,49 @@ body {
   width: 65%;
 }
 
+.hebergements-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  width: 811px;
+  height: 26px;
+}
+
+.hebergements-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+.hebergements-cards .card {
+  border: 1px solid yellow;
+  margin: 0 15px 15px 15px;
+}
+
+.hebergements-cards img {
+  width: 200px;
+  height: 124px;
+  border-radius: 20px 20px 0px 0px;
+}
+.hebergements-cards .card-content {
+  margin-left: 6px;
+  padding: 0;
+}
+
+.hebergements .plus {
+  cursor: pointer;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 15px;
+  color: #000000;
+}
 /****** Populaires ***********/
 .populaires {
   width: 32%;
@@ -114,6 +159,11 @@ body {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+.card-rating img {
+  width: 15px;
+  height: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
