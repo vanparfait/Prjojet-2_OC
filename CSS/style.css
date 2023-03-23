@@ -127,6 +127,7 @@ ul li .activites:hover {
 /* FORMULAIRE */
 form {
   position: relative;
+  margin-bottom: 20px;
 }
 form img {
   width: 14px;
@@ -500,5 +501,27 @@ form .mobile img {
     border: 1px solid red;
     flex-wrap: wrap;
     width: 100%;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  justify-content: space-between;
+  display: flex;
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nos_hebergements {
+    margin-left: 60px;
   }
 }
